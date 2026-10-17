@@ -9,12 +9,12 @@ dependencies:
   render_contracts:
     git:
       url: https://github.com/haneoka-gakuen/render-kernel-flutter.git
-      ref: d810428b8719d083ab97dda77dc3ce7de0ace444
+      ref: 235abdfab633a49acd7e78d81710bb7de9195d04
       path: packages/render_contracts
   render_kernel_flutter:
     git:
       url: https://github.com/haneoka-gakuen/render-kernel-flutter.git
-      ref: d810428b8719d083ab97dda77dc3ce7de0ace444
+      ref: 235abdfab633a49acd7e78d81710bb7de9195d04
   flutter:
     sdk: flutter
   flutter_gpu:

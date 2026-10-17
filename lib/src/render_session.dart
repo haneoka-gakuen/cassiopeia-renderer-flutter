@@ -4,6 +4,7 @@ final class CassiopeiaRenderSession extends RenderSession {
   CassiopeiaRenderSession({
     required super.renderer,
     required super.fetch,
+    super.textureDataFetch,
     super.reuseDecodedImages,
     super.retainDecodedImageMipmaps = false,
   });
