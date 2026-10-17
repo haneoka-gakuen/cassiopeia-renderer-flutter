@@ -14,7 +14,7 @@ dependencies:
   render_kernel_flutter:
     git:
       url: https://github.com/haneoka-gakuen/render-kernel-flutter.git
-      ref: e0c6896ddbdee3f22f25692805fe956ac5911850
+      ref: 025284f2f17c5f804b4afe05033ba0c3e08090bc
   flutter:
     sdk: flutter
   flutter_gpu:
