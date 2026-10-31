@@ -1,7 +1,20 @@
 # Cassiopeia renderer for Flutter
 
-An independent Flutter rendering backend for Cassiopeia. `CassiopeiaRenderSession` takes a generic draw graph and an asset loader, then submits frames and manages image resources through the shared GPU kernel.
+Flutter rendering backend and chart overview for the [Cassiopeia](https://github.com/haneoka-gakuen/cassiopeia) rhythm-game engine.
 
-`overview.dart` draws a flat chart view panel by panel from notes, curves and atlas geometry produced by a format plugin. The session runtime owns judgement and the timeline, game plugins own lanes, notes, HUD and effect data, and the host supplies media and input.
+`CassiopeiaRenderSession` takes a generic draw graph and an asset loader, then submits frames and manages image resources through [`render-kernel-flutter`](https://github.com/haneoka-gakuen/render-kernel-flutter). `overview.dart` draws a flat chart view from notes, curves and atlas geometry produced by a format plugin. The session runtime owns judgement and the timeline, and game plugins own lanes and notes.
 
-Run `flutter pub get` and `flutter analyze` from the repository root. Haneoka's Linux Flutter AOT build uses this source and has run it with real charts, normal lives and gekiso performances.
+## Usage
+
+Add the package as a Git dependency and create a `CassiopeiaRenderSession`.
+
+## Development
+
+```sh
+flutter pub get
+flutter analyze
+```
+
+## License
+
+[MPL-2.0](LICENSE).
