@@ -1,7 +1,7 @@
 # Cassiopeia renderer for Flutter
 
-Cassiopeia 的独立 Flutter 渲染后端。`CassiopeiaRenderSession` 接收通用绘制图与资源加载器，复用共享 GPU kernel 提交帧和管理图片资源。
+An independent Flutter rendering backend for Cassiopeia. `CassiopeiaRenderSession` takes a generic draw graph and an asset loader, then submits frames and manages image resources through the shared GPU kernel.
 
-`overview.dart` 提供按可见面板绘制的平面谱面视图，接收格式插件生成的音符、曲线和图集几何。会话运行时负责判定与时间线，游戏插件负责轨道、音符、HUD和特效数据，宿主组合媒体与输入。
+`overview.dart` draws a flat chart view panel by panel from notes, curves and atlas geometry produced by a format plugin. The session runtime owns judgement and the timeline, game plugins own lanes, notes, HUD and effect data, and the host supplies media and input.
 
-运行 `flutter pub get` 与 `flutter analyze`。此源版本已进入 Haneoka 的 Linux Flutter AOT 构建，并在真实谱面、普通Live和激奏演出中运行。
+Run `flutter pub get` and `flutter analyze` from the repository root. Haneoka's Linux Flutter AOT build uses this source and has run it with real charts, normal lives and gekiso performances.
